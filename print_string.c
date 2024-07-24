@@ -9,7 +9,7 @@ void print_string(va_list args, int *count)
 /* args extrait le prochain argument de type char* de la liste args */
 /* et le stocke dans le pointeur str. */
 	char *str = va_arg(args, char*);
-	
+
 	if (str == NULL)
 		str = "(null)";
 

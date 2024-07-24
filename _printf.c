@@ -5,7 +5,7 @@
  *
  * @format: ptr de chaine de caractère
  * format spécifie comment les arguments vont être convers
- * 
+ *
  * Return: Nombres de caractères imprims
  */
 
@@ -19,8 +19,14 @@ int _printf(const char *format, ...)
 
 	for (i = 0; format && format[i]; i++)
 	{
-		if (format[i] == '%' && format[i + 1] != '\0')
+		if (format[i] == '%')
 		{
+			if (format[i + 1] == '\0')
+			{
+				count = -1;
+				return (count);
+			}
+
 			i++;
 			function = get_function(format[i]);
 
@@ -29,16 +35,10 @@ int _printf(const char *format, ...)
 				_putchar('%');
 				_putchar(format[i]);
 				count += 2;
-			}
-			else
+			} else
 				function(args, &count);
 		}
-		else if (format[i] == '%' && format[i + 1] != '\0')
-		{
-			_putchar('%');
-			count++;
-
-		} else
+		else
 		{
 			_putchar(format[i]);
 			count++;
