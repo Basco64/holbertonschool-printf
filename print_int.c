@@ -1,4 +1,5 @@
 #include "main.h"
+#include <limits.h>
 
 void print_int_recursive(int num, int *count);
 /**
@@ -9,6 +10,13 @@ void print_int_recursive(int num, int *count);
 void print_int(va_list args, int *count)
 {
 int num = va_arg(args, int);
+if (num == INT_MIN)
+{
+	_putchar('-');
+	_putchar('2');
+	num = 147483648;
+}
+
 if (num < 0) /* si num est négatif */
 {
 	_putchar('-'); /* print '-' */
