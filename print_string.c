@@ -11,10 +11,12 @@ void print_string(va_list args, int *count)
 	char *str = va_arg(args, char*);
 	
 	if (str == NULL)
-		return;
-	while (*str) /* tant que str != '\0' */
+		str = "(null)";
+
+
+	while (*str)
 	{
-		_putchar(*str++); /* print le char pointé par str puis passe au suivant */
-		(*count)++; /* incrémente count à chaque caractère print par _putchar */
+		_putchar(*str++);
+		(*count)++;
 	}
 }

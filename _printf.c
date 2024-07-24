@@ -33,7 +33,12 @@ int _printf(const char *format, ...)
 			else
 				function(args, &count);
 		}
-		else
+		else if (format[i] == '%' && format[i + 1] != '\0')
+		{
+			_putchar('%');
+			count++;
+
+		} else
 		{
 			_putchar(format[i]);
 			count++;
