@@ -14,6 +14,7 @@ if (num == INT_MIN)
 {
 	_putchar('-');
 	_putchar('2');
+	(*count) += 2;
 	num = 147483648;
 }
 
