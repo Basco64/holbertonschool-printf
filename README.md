@@ -1,4 +1,3 @@
-README for checker
 # Printf
 
 Hello, welcome to our first group project, we're replicating the printf() function from the C Standard Library.
@@ -147,9 +146,6 @@ I see 5 magnificent cumulonimbus in the sky !
 
 This project was created by **[Clément Chassemon](https://github.com/UsagerLambda)** and **[Xabi Martinez](https://github.com/Basco64)** for the Holberton School.
 
-## License
-
-_This project is licensed under the MIT license._
 
 ## Acknowledgements
 
