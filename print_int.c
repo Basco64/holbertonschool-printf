@@ -31,9 +31,9 @@ _putchar(num % 10 + '0'); /* Affiche le dernier chiffre de num */
 }
 
 /**
- * print_int_recursive - Entry point
- * @num: Standby
- * @count: Dtandby
+ * print_int_recursive - Affiche un entier de manière récursive
+ * @num: L'entier à afficher
+ * @count: Ptr vers une variable qui compte le nombre de caractères imprimés
  */
 void print_int_recursive(int num, int *count)
 {
