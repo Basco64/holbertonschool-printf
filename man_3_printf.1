@@ -1,0 +1,63 @@
+.TH _PRINTF 3 "25 July 2024" "Version 1.0"
+
+.SH NAME
+_printf \- Print formatted output to standard output
+
+.SH SYNOPSIS
+.B #include <stdarg.h>
+.B #include <unistd.h>
+.B #include <limits.h>
+
+.SH DESCRIPTION
+.B _printf
+prints a formatted string to the standard output (stdout).
+
+The first argument 
+.I format
+is a string that contains format specifiers. Format specifiers are sequences that begin with a percentage sign (%) and end with a character indicating the type. Available format specifiers include:
+
+.TP
+.B %d
+Print a decimal integer.
+.TP
+.B %i
+Print a decimal integer.
+.TP
+.B %s
+Print a string.
+.TP
+.B %c
+Print a character.
+.TP
+.B %%
+Print a %
+
+The arguments following 
+.I format
+are the values to be printed, corresponding to the format specifiers in the string.
+
+.SH RETURN VALUE
+The 
+.B _printf
+function returns the total number of characters printed (excluding the null terminator) on success. In case of an error, a negative value is returned.
+
+.SH ERRORS
+.B _printf
+returns -1 if an error occurs, such as if the format string contains an invalid format specifier or if the character following a percentage sign (%) is a null character ('\0').
+
+.SH EXAMPLE
+Here is an example of using 
+.B _printf
+
+.TP
+.B _printf("Character : %c\n", 'A');
+Display "Character : A".
+.TP
+.B _printf("String : %s\n", "Hello");
+Display  "String : Hello".
+.TP
+.B _printf("Number : %d\n", 123);
+Display  "Number : 123".
+
+.SH AUTHOR
+Xabi Martinez <https://github.com/Basco64> / Clément Chassemon <https://github.com/UsagerLambda>
