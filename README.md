@@ -63,20 +63,20 @@ E --> M
 M -- Yes --> N([End va_list args and return the counter])
 M -- No --> C
 
-style A fill:#6A5ACD,stroke:#333,stroke-width:2px,color:white
-style B fill:#87CEEB,stroke:#333,stroke-width:2px,color:white
-style C fill:#87CEEB,stroke:#333,stroke-width:2px,color:white
-style D fill:#F0E68C,stroke:#333,stroke-width:2px,color:white
-style E fill:#FF6347,stroke:#333,stroke-width:2px,color:white
-style F fill:#87CEEB,stroke:#333,stroke-width:2px,color:white
-style G fill:#F0E68C,stroke:#333,stroke-width:2px,color:white
-style H fill:#FF6347,stroke:#333,stroke-width:2px,color:white
-style I fill:#87CEEB,stroke:#333,stroke-width:2px,color:white
-style J fill:#F0E68C,stroke:#333,stroke-width:2px,color:white
-style K fill:#FF6347,stroke:#333,stroke-width:2px,color:white
-style L fill:#87CEEB,stroke:#333,stroke-width:2px,color:white
-style M fill:#F0E68C,stroke:#333,stroke-width:2px,color:white
-style N fill:#6A5ACD,stroke:#333,stroke-width:2px,color:white
+style A fill:#6A5ACD,stroke:#333,stroke-width:2px,color:black
+style B fill:#87CEEB,stroke:#333,stroke-width:2px,color:black
+style C fill:#87CEEB,stroke:#333,stroke-width:2px,color:black
+style D fill:#F0E68C,stroke:#333,stroke-width:2px,color:black
+style E fill:#FF6347,stroke:#333,stroke-width:2px,color:black
+style F fill:#87CEEB,stroke:#333,stroke-width:2px,color:black
+style G fill:#F0E68C,stroke:#333,stroke-width:2px,color:black
+style H fill:#FF6347,stroke:#333,stroke-width:2px,color:black
+style I fill:#87CEEB,stroke:#333,stroke-width:2px,color:black
+style J fill:#F0E68C,stroke:#333,stroke-width:2px,color:black
+style K fill:#FF6347,stroke:#333,stroke-width:2px,color:black
+style L fill:#87CEEB,stroke:#333,stroke-width:2px,color:black
+style M fill:#F0E68C,stroke:#333,stroke-width:2px,color:black
+style N fill:#6A5ACD,stroke:#333,stroke-width:2px,color:black
 ```
 
 ## Prerequisites
