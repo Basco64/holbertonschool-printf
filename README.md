@@ -64,18 +64,18 @@ M -- Yes --> N([End va_list args and return the counter])
 M -- No --> C
 
 style A fill:#6A5ACD,stroke:#333,stroke-width:2px,color:white
-style B fill:#87CEEB,stroke:#333,stroke-width:2px
-style C fill:#87CEEB,stroke:#333,stroke-width:2px
-style D fill:#F0E68C,stroke:#333,stroke-width:2px
-style E fill:#FF6347,stroke:#333,stroke-width:2px
-style F fill:#87CEEB,stroke:#333,stroke-width:2px
-style G fill:#F0E68C,stroke:#333,stroke-width:2px
-style H fill:#FF6347,stroke:#333,stroke-width:2px
-style I fill:#87CEEB,stroke:#333,stroke-width:2px
-style J fill:#F0E68C,stroke:#333,stroke-width:2px
-style K fill:#FF6347,stroke:#333,stroke-width:2px
-style L fill:#87CEEB,stroke:#333,stroke-width:2px
-style M fill:#F0E68C,stroke:#333,stroke-width:2px
+style B fill:#87CEEB,stroke:#333,stroke-width:2px,color:white
+style C fill:#87CEEB,stroke:#333,stroke-width:2px,color:white
+style D fill:#F0E68C,stroke:#333,stroke-width:2px,color:white
+style E fill:#FF6347,stroke:#333,stroke-width:2px,color:white
+style F fill:#87CEEB,stroke:#333,stroke-width:2px,color:white
+style G fill:#F0E68C,stroke:#333,stroke-width:2px,color:white
+style H fill:#FF6347,stroke:#333,stroke-width:2px,color:white
+style I fill:#87CEEB,stroke:#333,stroke-width:2px,color:white
+style J fill:#F0E68C,stroke:#333,stroke-width:2px,color:white
+style K fill:#FF6347,stroke:#333,stroke-width:2px,color:white
+style L fill:#87CEEB,stroke:#333,stroke-width:2px,color:white
+style M fill:#F0E68C,stroke:#333,stroke-width:2px,color:white
 style N fill:#6A5ACD,stroke:#333,stroke-width:2px,color:white
 ```
 
