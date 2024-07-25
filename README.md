@@ -47,18 +47,18 @@ Specifier characters define the type and the interpretation of its corresponding
 
 ```mermaid
 graph TB
-A(["Start _printf(my_text)"]) --> B([Initialize va_list args and counter to 0])
-B --> C([Read the format string])
+A(["Start _printf(my_text)"]) --> B[Initialize va_list args and counter to 0]
+B --> C[Read the format string]
 C --> D{"Current character = '%' ?"}
-D -- No --> E([Print the character and increment the counter])
-D -- Yes --> F([Read the next character])
+D -- No --> E[Print the character and increment the counter]
+D -- Yes --> F[Read the next character]
 F --> G{"Next character = '\0' ?"}
 G -- Yes --> H(["Return error (-1)"])
-G -- No --> I([Get the function associated with the specifier])
+G -- No --> I[Get the function associated with the specifier]
 I --> J{Function found?}
-J -- No --> K(["Print '%' and the specifier, increment counter by 2"])
-J -- Yes --> L([Call the function with va_list args and increment the counter])
-L --> M([End of the format string?])
+J -- No --> K["Print '%' and the specifier, increment counter by 2"]
+J -- Yes --> L[Call the function with va_list args and increment the counter]
+L --> M[End of the format string?]
 E --> M
 M -- Yes --> N([End va_list args and return the counter])
 M -- No --> C
