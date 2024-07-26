@@ -56,7 +56,7 @@ F --> G{"Next character = '\0' ?"}
 G -- Yes --> H(["Return error (-1)"])
 G -- No --> I[Get the function associated with the specifier]
 I --> J{Function found?}
-J -- No --> K(["Print '%' and the specifier, increment counter by 2"])
+J -- No --> K["Print '%' and the specifier, increment counter by 2"]
 J -- Yes --> L[Call the function with va_list args and increment the counter]
 L --> M[End of the format string?]
 E --> M
